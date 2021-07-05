@@ -42,7 +42,7 @@
 // |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | 
 // |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  | 
 // |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | 
-//             | CTRL| LWR | SPC |   | ENT | RSE  | SHFT|
+//   | ALT ESC | SHIFT | GUI SPC |   | LWR TAB | RSE RET | BKSP |
                         bindings = <
    &none &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &none
    &none &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &none
@@ -55,12 +55,12 @@
 // |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  |
 // |     |     |     |     | DEL |   |     |  UP |     | HOME|PG_UP|
 // |     |     |     |     |     |   | LFT | DWN | RGT | END |PG_DN|
-//             |     |     |     |   | 3   |     |     |
+//             |     |     |     |   |     |  3  |     |
                         bindings = <
    &none &kp N1 &kp N2 &kp N3 &kp N4 &kp N5   &kp N6   &kp N7   &kp N8    &kp N9   &kp N0    &none
    &none &trans	&trans &trans &trans &kp DEL  &trans   &kp UP   &trans    &kp HOME &kp PG_UP &none
    &none &trans	&trans &trans &trans &trans   &kp LEFT &kp DOWN &kp RIGHT &kp END  &kp PG_DN &none
-   &trans &trans &trans &mo 3 &trans &trans
+   &trans &trans &trans &trans &mo 3 &trans
                         >;
                 };
                 
@@ -69,12 +69,12 @@
 // |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )   |
 // |  <  |     |  ~  |PSCRN|  "  |   |  |  |  \  |  +  |  [  |  ]   |
 // |  >  |     |     | INS |  '  |   |  ?  |  /  |  =  |  {  |  }   | 
-//             |     |     |     |   |     |  3  |     |
+//             |     |     |     |   |  3  |     |     |
                         bindings = <
    &none &kp EXCL &kp AT &kp HASH  &kp DLLR  &kp PRCNT   &kp CARET &kp AMPS &kp ASTRK &kp LPAR &kp RPAR &none
    &none &kp LT   &trans &kp TILDE &kp PSCRN &kp DQT     &kp PIPE  &kp BSLH &kp PLUS  &kp LBKT &kp RBKT &none
    &none &kp GT   &trans &trans    &kp INS   &kp SQT     &kp QMARK &kp FSLH &kp EQUAL &kp LBRC &kp RBRC &none
-   &trans &trans &trans &trans &mo 3 &trans
+   &trans &trans &trans &mo 3 &trans &trans
                         >;
                 };
                 

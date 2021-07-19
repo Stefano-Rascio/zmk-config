@@ -69,13 +69,13 @@
                 raise_layer {
 // -----------------------------------------------------------------------------------------
 // |PSCRN|KP_NLCK|KP_N7|KP_N8|KP_N9|   |  /  |  -  |  *  |  <  |  >   |
-// | INS |       |KP_N4|     |KP_N6|   |KP_N5|  +  |  =  |  [  |  ]   |
+// | INS |   -   |KP_N4|     |KP_N6|   |KP_N5|  +  |  =  |  [  |  ]   |
 // |  ~  |       |KP_N1|KP_N2|KP_N3|   |KP_N0|  .  |  '  |  {  |  }   | 
 //               |     |     |     |   |  3  |     |     |
                         bindings = <
-   &none &kp PSCRN &kp KP_NLCK &kp KP_N7 &kp KP_N8 &kp KP_N9   &kp FSLH  &kp MINUS &kp ASTRK &kp LT   &kp GT &none
-   &none &kp INS   &trans      &kp KP_N4 &trans    &kp KP_N6   &kp KP_N5 &kp PLUS  &kp EQUAL &kp LBKT &kp RBKT &none
-   &none &kp TILDE &trans      &kp KP_N1 &kp KP_N2 &kp KP_N3   &kp KP_N0 &kp DOT   &kp SQT   &kp LBRC &kp RBRC &none
+   &none &kp PSCRN &kp KP_NLCK &kp KP_N7 &kp KP_N8 &kp KP_N9   &kp KP_SLASH &kp KP_MINUS &kp KP_ASTERISK &kp LT   &kp GT &none
+   &none &kp INS   &kp MINUS   &kp KP_N4 &none     &kp KP_N6   &kp KP_N5    &kp KP_PLUS  &kp EQUAL       &kp LBKT &kp RBKT &none
+   &none &kp TILDE &trans      &kp KP_N1 &kp KP_N2 &kp KP_N3   &kp KP_N0    &kp KP_DOT   &kp SQT         &kp LBRC &kp RBRC &none
                                &trans    &trans    &trans      &mo 3     &trans    &trans
                         >;
                 };
